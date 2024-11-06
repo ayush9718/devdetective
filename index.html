@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevDetective</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top-container">
+            <div class="light-container">
+                <p>DevDetective</p>
+                <div theme-selector>
+                    <p data-theme id="lightyagami">Light</p>
+                    <img button-theme src="./sunpng.svg" >
+                </div>
+                
+            </div>
+            <div class="search-container">
+                <img src="./searchpng.svg" class="search" alt="">
+                <input type="text" class="dataSearch" data-search placeholder="Enter a Git Hub Username...">
+                <button data-searchButton>Search</button>
+            </div>
+            <div class="output-container">
+                <div class="userName-container" data-User>
+                    <img user-image class="userimage">
+                    <div class="user-Name">
+                    <p user-name></p>    
+                     <a user-id target="_blank" href=""></a>   
+                    </div>
+                    <p joined-date></p>
+                </div>
+                <p data-bio class="bio"></p>
+                <div  class="follow-container">
+                    <div class="repos card">
+                        <p>Repos</p>
+                        <p data-repos=""></p>
+                    </div>
+                    <div class="followers card">
+                        <p>Followers</p>
+                        <p data-followers=""></p>
+                    </div>
+                    <div class="following card">
+                        <p>Following</p>
+                        <p data-following=""></p>
+                    </div>
+
+                </div>
+                <div class="links-container">
+                    <div class="location links">
+                       <img src="locationpng.svg" alt="">
+                        <p data-location></p>
+                    </div>
+                    <div class="blog links">
+                        <img src="linkpng.svg" alt="">
+                        <a href="" target="_blank" data-blog></a>
+                    </div>
+                    <div class="twitter links">
+                        <img src="twitterpng.svg" alt="">
+                        <a href="" target="_blank" data-twitter></a>
+                    </div>
+                    <div class="addres links">
+                        <img src="./buildingpng.svg" alt="">
+                        <p data-addres></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
